@@ -37,11 +37,11 @@ export default function (Alpine) {
     }
   }
 
-  if (window.customElements.get('x-component')) {
+  if (window.customElements.get('alpine-component')) {
     return
   }
 
-  customElements.define('x-component', ComponentWrapper)
+  customElements.define('alpine-component', ComponentWrapper)
 
   new ComponentWrapper()
 }
